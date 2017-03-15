@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="300dp"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical" >
+    
+    <FrameLayout 
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+        <TextView 
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/subsubtitle_size"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@drawable/bg_button_white"
+            android:clickable="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+        
+        <TextView 
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/subsubtitle_size"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@drawable/bg_button_white"
+            android:clickable="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+        
+        <TextView 
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/subsubtitle_size"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@drawable/bg_button_blue"
+            android:clickable="true"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"/>
+    </LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_margin="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题:"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/subtitle"/>
+        <EditText
+            android:id="@+id/url_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/subtitle"
+            android:textColor="@color/text_color"
+            android:background="@drawable/bg_edittext"
+            android:layout_margin="10dp"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/dir_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:divider="@color/dividing_line"
+        android:listSelector="@drawable/bg_list_item"/>
+
+</LinearLayout>

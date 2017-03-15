@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1">
+		<LinearLayout
+			android:id="@+id/web_list"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"/>
+	</ScrollView>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_margin="5dp">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分组名:"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/subtitle"/>
+	    <EditText 
+	        android:id="@+id/edittext"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/subtitle"
+	        android:textColor="@color/text_color"
+	        android:background="@drawable/bg_edittext"
+	        android:layout_margin="10dp"
+	        android:singleLine="true"/>
+    </LinearLayout>
+
+</LinearLayout>

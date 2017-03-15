@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <com.musketeer.datasearch.view.HeaderLayoutBar
+        android:id="@+id/main_headbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headbar_height"
+        android:focusable="true"/>
+    
+    <com.musketeer.datasearch.view.NumberProgressBar
+        android:id="@+id/load_progress"
+        android:layout_width="wrap_content"
+        style="@style/NumberProgressBar_Default"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent" />
+    
+    <WebView 
+        android:id="@+id/scanner_result_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <com.musketeer.datasearch.view.HeaderLayoutBar
+        android:id="@+id/main_headbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headbar_height"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dividing_line"/>
+    
+    <LinearLayout 
+        android:id="@+id/record_dir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bg_common">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/directinary"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/subtitle"
+            android:background="@drawable/bg_directionary_text"
+            android:gravity="center"
+            android:clickable="true" />
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dividing_line"/>
+    
+    <ListView 
+        android:id="@+id/directionary_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:listSelector="@drawable/bg_list_item" />
+</LinearLayout>

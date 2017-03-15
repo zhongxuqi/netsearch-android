@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.musketeer.datasearch.MainActivity" >
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/search"
+        android:icon="@drawable/ic_menu_search"
+        android:actionViewClass="android.widget.SearchView"/>
+    
+    <item 
+	    android:id="@+id/action_setting"
+	    android:title="@string/setting"
+	    android:showAsAction="never"/>
+    
+    <item 
+	    android:id="@+id/action_help"
+	    android:title="@string/help"
+	    android:showAsAction="never"/>
+
+</menu>

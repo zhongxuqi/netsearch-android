@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_popup_window" >
+    <LinearLayout 
+	    android:id="@+id/create_new_folder"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical"
+	    android:clickable="true"
+	    android:background="@drawable/bg_list_item">
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"
+	        android:src="@drawable/more_create_folder"/>
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/create_new_folder"
+	        android:textColor="@color/text_color"
+	        android:textSize="@dimen/subtitle"
+	        android:layout_marginLeft="10dp"/>
+	</LinearLayout>
+
+</LinearLayout>

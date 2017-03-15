@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.musketeer.datasearch.activity.SettingActivity"
+    android:orientation="vertical" >
+    
+    <com.musketeer.datasearch.view.HeaderLayoutBar
+        android:id="@+id/main_headbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headbar_height"/>
+
+    <RadioGroup 
+        android:id="@+id/load_way"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/load_way_"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_content_size"
+            android:textStyle="bold"/>
+        
+        <RadioButton 
+            android:id="@+id/webview_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/webview_load"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_content_size"/>
+        
+        <RadioButton 
+            android:id="@+id/browser_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/browser_load"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_content_size"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/notice_type_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/notice_type_"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_content_size"
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:id="@+id/notice_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notice_open"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_content_size"/>
+
+        <RadioButton
+            android:id="@+id/notice_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notice_close"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_content_size"/>
+    </RadioGroup>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/web_groups"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/title"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+        
+        <TextView 
+            android:id="@+id/add_new_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/add_new_group"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/subtitle"
+            android:drawableLeft="@drawable/more_create_folder"
+            android:background="@drawable/bg_list_item"
+            android:clickable="true"/>
+    </LinearLayout>
+    
+    <ListView 
+        android:id="@+id/web_group_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/dividing_line"
+        android:background="@color/transparent"/>
+
+</LinearLayout>

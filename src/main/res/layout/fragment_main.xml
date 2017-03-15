@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true">
+    <com.musketeer.datasearch.view.HeaderLayoutBar
+        android:id="@+id/main_headbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headbar_height"
+        android:focusable="true"/>
+
+    <!--<HorizontalScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="32dp">-->
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/tab_title"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@android:color/transparent"
+            tl:tl_textsize="16sp"
+            tl:tl_indicator_color="@color/app_theme_color"
+            tl:tl_indicator_height="1.5dp"
+            tl:tl_indicator_width_equal_title="true"
+            tl:tl_tab_padding="10dp"
+            tl:tl_tab_space_equal="true"
+            tl:tl_textSelectColor="#000000"
+            tl:tl_textUnselectColor="#66000000"
+            tl:tl_underline_color="@android:color/transparent"
+            tl:tl_underline_height="1dp"/>
+    <!--</HorizontalScrollView>-->
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/search_result_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
